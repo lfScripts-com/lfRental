@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Location de Véhicules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="vehicle-rental">
+        <div class="header">
+            <h1>Location de Véhicules</h1>
+            <button id="close-ui">&times;</button>
+        </div>
+        <div class="description">
+            <p>
+                Louez un véhicule et profitez-en autant que vous le souhaitez. Une fois que vous aurez terminé, ramenez le véhicule dans la zone de retour pour être entièrement remboursé du montant de la location.
+            </p>
+        </div>
+        
+        <div class="vehicle-container">
+            <div class="vehicle" data-model="faggio" data-price="300">
+                <img src="faggio.webp" alt="Faggio">
+                <h2>Faggio</h2>
+                <p>Prix: $300</p>
+                <button>Louez Maintenant</button>
+            </div>
+            <div class="vehicle" data-model="kalahari" data-price="500">
+                <img src="kalahari.webp" alt="Kalahari">
+                <h2>Kalahari</h2>
+                <p>Prix: $500</p>
+                <button>Louez Maintenant</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

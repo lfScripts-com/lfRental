@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* UI cachée par défaut */
+    margin: 0;
+    padding: 0;
+}
+
+#vehicle-rental {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(240, 244, 248, 0.80); /* Fond clair semi-transparent */
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+    border: none;
+    box-shadow: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    background-color: rgba(52, 73, 94, 0.80); /* Bleu profond semi-transparent */
+    padding: 20px;
+    position: relative;
+    border-bottom: none;
+}
+
+.header h1 {
+    color: #ecf0f1;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#close-ui {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #ecf0f1;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#close-ui:hover {
+    /* Plus d'animation ni de changement de couleur */
+    opacity: 1;
+}
+
+/* Nouvelle section de description */
+.description {
+    background-color: rgba(236, 240, 241, 0.80); /* Fond clair semi-transparent */
+    padding: 15px 20px;
+    border-bottom: 2px solid #d1d8e0;
+    text-align: center;
+}
+
+.description p {
+    color: #2c3e50;
+    font-size: 16px;
+    margin: 0;
+}
+
+.vehicle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vehicle {
+    background-color: rgba(255, 255, 255, 0.80); /* Fond blanc semi-transparent */
+    border: 2px solid #d1d8e0;
+    border-radius: 0;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    animation: scaleUp 0.5s ease;
+    box-shadow: none;
+    min-height: unset;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.vehicle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #8e44ad;
+}
+
+.vehicle img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-bottom: 2px solid #d1d8e0;
+    margin-bottom: 0;
+}
+
+.vehicle h2 {
+    margin: 15px 0 10px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: unset;
+}
+
+.vehicle p {
+    margin: 0 0 15px;
+    color: #7f8c8d;
+    font-size: unset;
+}
+
+.vehicle button {
+    background-color: rgba(142, 68, 173, 0.80); /* Violet semi-transparent */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0.92;
+    font-weight: unset;
+    box-shadow: none;
+}
+
+.vehicle button:hover {
+    background-color: rgba(155, 89, 182, 0.80);
+    transform: translateY(-3px);
+    opacity: 1;
+    box-shadow: none;
+}
+
+.vehicle button:active {
+    transform: translateY(1px);
+    opacity: 0.85;
+}
