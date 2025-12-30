@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 shared_script '@es_extended/imports.lua'
-
+author 'LFScripts, xLaugh, Firgyy'
 shared_scripts {
     'config.lua'
 }
