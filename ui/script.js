@@ -1,6 +1,6 @@
 window.addEventListener('message', function(event) {
     if (event.data.action == 'open') {
-        document.body.style.display = 'block'; // Afficher l'UI
+        document.body.style.display = 'flex'; // Afficher l'UI avec flexbox pour centrer
     } else if (event.data.action == 'close') {
         document.body.style.display = 'none'; // Cacher l'UI
     }

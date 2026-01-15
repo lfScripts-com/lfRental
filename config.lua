@@ -119,14 +119,14 @@ Config.PlateMax = 9999 -- Numéro maximum de la plaque
 -- ============================================
 
 Config.DiscordWebhook = {
-    enabled = true, -- Activer/désactiver les webhooks
-    url = 'https://discord.com/api/webhooks/1346160833767542926/Wv6qCr8aNoUXksi8OZ1B4QInLDDJ6HB1ekvGPlTQhOeMfhdM6bnV0k-Qmi_9YGmEw0aC',
+    enabled = false, -- Activer/désactiver les webhooks
+    url = '',
     colors = {
         rented = 3066993,    -- Vert pour nouvelle location
         returned = 15105570,  -- Orange pour retour
         deleted = 15158332   -- Rouge pour suppression
     },
-    footer = "LaughLocations"
+    footer = "lfRental"
 }
 
 -- ============================================
